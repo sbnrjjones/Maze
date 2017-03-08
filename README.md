@@ -94,10 +94,10 @@ Now we need to examine the code from the book to solve the maze.  Notice that it
 	    // Attempt to find a path from each neighbor.
 	    // Tentatively mark cell as on path.
 	    grid[r][c] = PATH;
-	    if (find_maze_path(grid, r - 1, c)
-	        || find_maze_path(grid, r + 1, c)
-	        || find_maze_path(grid, r, c - 1)
-	        || find_maze_path(grid, r, c + 1 ) ) {
+	    if (find_maze_path(grid, r - 1, c) // Up
+	        || find_maze_path(grid, r + 1, c) // Down
+	        || find_maze_path(grid, r, c - 1) // Left
+	        || find_maze_path(grid, r, c + 1 ) ) { // Right
 	      solution.push_back("("+to_string(r)+","+to_string(c)+")");
 	      return true;
 	    }
