@@ -54,10 +54,10 @@ Now we need to create a way of printing out the maze so we can see what is happe
 	{
 	    stringstream ss;
 	    for(int row = 0; row < ROW_SIZE; row++) {
-		for(int col = 0; col < COL_SIZE; col++) {
-			ss << maze_grid[row][col];
-		}
-		ss << endl;
+	        for(int col = 0; col < COL_SIZE; col++) {
+	            ss << maze_grid[row][col];
+	        }
+	        ss << endl;
 	    }
 	    return ss.str();
 	}
