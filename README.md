@@ -431,3 +431,5 @@ find_maze_path [4][4]
 (0,1)
 (0,0)
 ```
+
+From Koffman, Elliot B. (2011-12-01). Objects, Abstraction, Data Structures and Design: Using C++. Wiley Higher Ed. Kindle Edition.
