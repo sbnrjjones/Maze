@@ -1,7 +1,7 @@
 # maze
-In this learning activity, we will examine the code from the book that explores a 2D maze.  This experience may help you in developing the code for lab 5 to explore a 3D maze.
+In this learning activity, we will examine code that explores a 2D maze.  This experience may help you in developing the code for the recursion lab to explore a 3D maze.
 
-To get started, lets build out enough of the lab 5 infrastructure to call the book code.  Start by downloading the lab 5 interface files and creating a Pathfinder class in "Pathfinder.h" that inherits from PathfinderInterface.  Then create "Pathfinder.cpp" that includes "Pathfinder.h"
+To get started, lets build out enough of the recursive lab infrastructure to call the code we will develop.  Start by downloading the recursion lab interface files and creating a Pathfinder class in "Pathfinder.h" that inherits from PathfinderInterface.  Then create "Pathfinder.cpp" that includes "Pathfinder.h"
 
 Now create a sample maze for us to explore in 2d.txt
 ```
@@ -75,7 +75,7 @@ Now call this code from main.cpp and make sure things are working.  You should h
 ```
 Compile your code and make sure everything is working.  You should be able to see the grid in the terminal window.
 
-Now we need to examine the code from the book to solve the maze.  Notice that it recursively calls itself to find a path from the upper left corner (0,0) to the bottom right (4,4).  When the bottom right position is found, we will add the coordinates of the path to the solution vector.
+Now we need to develop code to solve the maze.  Notice that it recursively calls itself to find a path from the upper left corner (0,0) to the bottom right (4,4).  When the bottom right position is found, we will add the coordinates of the path to the solution vector.
 ```c++
 	bool Pathfinder::find_maze_path(int grid[ROW_SIZE][COL_SIZE], int r, int c) {
 	  cout << "find_maze_path ["<<r<<"]["<<c<<"]"<<endl;
