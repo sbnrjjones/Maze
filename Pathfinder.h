@@ -7,9 +7,7 @@
 #include <sstream>
 using namespace std;
 
-/*
-WARNING: It is expressly forbidden to modify any part of this document, including its name
-*/
+
 const int ROW_SIZE = 5;
 const int COL_SIZE = 5;
 const int BACKGROUND = 1;
