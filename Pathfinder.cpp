@@ -1,7 +1,7 @@
 	#include "Pathfinder.h"
 	string Pathfinder::toString() const
 	{
-		stringstream ss;
+	    stringstream ss;
 	    for(int row = 0; row < ROW_SIZE; row++) {
 			for(int col = 0; col < COL_SIZE; col++) {
 				ss << maze_grid[row][col];
